@@ -1,0 +1,43 @@
+:root{
+  --brand:#1e3a5f;
+  --accent:#7fa3c8;
+  --ink:#1b1b1b;
+  --bg:#f6f8fb;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);}
+.container{max-width:1120px;margin:0 auto;padding:0 1rem}
+.site-header{background:#fff;border-bottom:1px solid #e6ecf2;position:sticky;top:0;z-index:1000}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:0.75rem 0}
+.brand{display:flex;align-items:center;gap:.75rem;text-decoration:none;color:var(--brand);font-weight:700}
+.brand small{display:block;font-weight:500;color:#526b8f}
+.site-nav a{margin-left:1rem;text-decoration:none;color:#274569}
+.site-nav a.cta{padding:.5rem .9rem;border-radius:.5rem;background:var(--brand);color:#fff}
+.nav-toggle{display:none}
+@media (max-width:860px){
+  .nav-toggle{display:block;background:#eef4fb;border:1px solid #cfe0f3;padding:.4rem .6rem;border-radius:.4rem}
+  .site-nav{display:none;position:absolute;top:60px;left:0;right:0;background:#fff;border-bottom:1px solid #e6ecf2;padding:1rem}
+  .site-nav.open{display:block}
+  .site-nav a{display:block;margin:.5rem 0}
+}
+.hero{padding:4rem 0 2rem 0;text-align:center}
+.hero h1{font-size:2.2rem;color:var(--brand);margin:.2rem 0}
+.hero-cta{margin-top:1rem;display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap}
+.button{background:var(--brand);color:#fff;border:none;border-radius:.6rem;padding:.7rem 1rem;text-decoration:none;display:inline-block}
+.button.ghost{background:transparent;color:var(--brand);border:2px solid var(--brand)}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin:2rem 0}
+.card{background:var(--card);padding:1rem;border:1px solid #e6ecf2;border-radius:12px;box-shadow:0 1px 0 rgba(0,0,0,.03)}
+.strip{background:#eef4fb;border:1px solid #d8e6f7;padding:1rem;border-radius:12px;margin:2rem 0}
+.bullets{line-height:1.7}
+.pricing{width:100%;border-collapse:separate;border-spacing:0 8px;margin:1rem 0}
+.pricing th{text-align:left;color:#345882}
+.pricing td, .pricing th{padding:.6rem 1rem;background:#fff;border:1px solid #e6ecf2}
+.notice{background:#fff8e6;border:1px solid #ffe1a3;padding:1rem;border-radius:12px;margin:1rem 0}
+.form{display:grid;gap:.7rem;max-width:640px}
+.form input,.form textarea{width:100%;padding:.6rem;border:1px solid #cfe0f3;border-radius:8px;background:#fff}
+.form button{justify-self:start}
+.smallprint{color:#5b6e86;font-size:.95rem}
+.site-footer{border-top:1px solid #e6ecf2;margin-top:3rem;padding:1.2rem 0;background:#fff}
+h1,h2,h3{color:#1e3a5f}
+a{color:#1e3a5f}
